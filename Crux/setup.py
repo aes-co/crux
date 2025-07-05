@@ -9,7 +9,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/aes-co/crux', # Assuming a GitHub repo will be created
-    packages=find_packages(),
+    packages=find_packages(where='.'),
     classifiers=[
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.10',

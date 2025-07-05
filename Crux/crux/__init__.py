@@ -5,5 +5,6 @@ from . import log
 from . import net
 from . import types
 from . import utils
+from . import cli
 
-__all__ = ['core', 'files', 'lang', 'log', 'net', 'types', 'utils']
+__all__ = ['core', 'files', 'lang', 'log', 'net', 'types', 'utils', 'cli']
