@@ -1,0 +1,36 @@
+site_name: Crux Documentation
+site_url: https://aes-co.github.io/crux/
+repo_url: https://github.com/aes-co/crux
+repo_name: aes-co/crux
+
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: light blue
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Modules:
+    - Core: modules/core.md
+    - Networking: modules/net.md
+    - Filesystem: modules/files.md
+    - Logging: modules/log.md
+    - Language: modules/lang.md
+    - Types: modules/types.md
+    - Utilities: modules/utils.md
+    - CLI: modules/cli.md
+  - Installation: installation.md
+  - Usage: usage.md
+  - Contributing: ../CONTRIBUTING.md
+  - Changelog: ../HISTORY.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
