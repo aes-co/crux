@@ -9,10 +9,10 @@
 </p>
 
 <p align="center">
-  <a href="https://pypi.org/project/crux-aes/"><img src="https://img.shields.io/pypi/v/crux-aes?style=flat-square"/></a>
-  <img src="https://img.shields.io/pypi/pyversions/crux-aes?style=flat-square"/>
-  <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square"/>
-  <img src="https://img.shields.io/badge/status-stable-green?style=flat-square"/>
+  <a href="https://pypi.org/project/crux-aes/"><img src="https://img.shields.io/pypi/v/crux-aes?style=flat-square&label=PyPI" alt="PyPI"/></a>
+  <a href="https://github.com/aes-co/crux/actions/workflows/ci.yml"><img src="https://github.com/aes-co/crux/actions/workflows/ci.yml/badge.svg" alt="Build Status"/></a>
+  <a href="https://pypi.org/project/crux-aes/"><img src="https://img.shields.io/pypi/pyversions/crux-aes?style=flat-square" alt="Python Versions"/></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License: MIT"/></a>
 </p>
 
 ---
