@@ -25,4 +25,9 @@ setup(
     install_requires=[
         'aiohttp',
     ],
+    extras_require={
+        'dev': [
+            'aiohttp', # For testing net.py
+        ]
+    }
 )
