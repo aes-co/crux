@@ -11,6 +11,7 @@
 <p align="center">
   <a href="https://pypi.org/project/crux-aes/"><img src="https://img.shields.io/pypi/v/crux-aes?style=flat-square&label=PyPI" alt="PyPI"/></a>
   <a href="https://github.com/aes-co/crux/actions/workflows/ci.yml"><img src="https://github.com/aes-co/crux/actions/workflows/ci.yml/badge.svg" alt="Build Status"/></a>
+  <a href="https://codecov.io/gh/aes-co/crux"><img src="https://codecov.io/gh/aes-co/crux/branch/main/graph/badge.svg" alt="Code Coverage"/></a>
   <a href="https://pypi.org/project/crux-aes/"><img src="https://img.shields.io/pypi/pyversions/crux-aes?style=flat-square" alt="Python Versions"/></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License: MIT"/></a>
 </p>

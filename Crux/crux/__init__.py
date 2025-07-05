@@ -7,4 +7,6 @@ from . import types
 from . import utils
 from . import cli
 
+__version__ = "1.0.0"
+
 __all__ = ['core', 'files', 'lang', 'log', 'net', 'types', 'utils', 'cli']

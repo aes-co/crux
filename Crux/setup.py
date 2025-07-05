@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='crux-aes',
-    version='1.0.0',
+    version=__import__('crux').__version__,
     author='aesneverhere',
     author_email='aesh.n@outlook.com',
     description='A lightweight, modular Python utility library for aes-co projects.',
