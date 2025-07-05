@@ -1,4 +1,0 @@
-include crux/py.typed
-include README.md
-include LICENSE
-include HISTORY.md
