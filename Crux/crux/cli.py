@@ -5,9 +5,7 @@ import argparse
 from crux import core, log
 
 def _color_text(text: str, color_code: int) -> str:
-    return f"
-[{color_code}m{text}
-[0m"
+    return f"\033[{color_code}m{text}\033[0m"
 
 def red(text: str) -> str:
     return _color_text(text, 31)
@@ -39,18 +37,22 @@ def underline(text: str) -> str:
 def info_command(args):
     log.info(f"Crux Mode: {core.get_mode()}")
     log.info(f"Project Root: {core.get_project_root()}")
+    log.info(f"Python Version: {sys.version.split()[0]}")
 
 def env_command(args):
-    log.info("Loaded Environment Variables:")
-    if not os.environ:
-        log.info("  (No environment variables loaded)")
+    log.info("Loaded Environment Variables (CRUX_ prefixed):")
+    found_crux_env = False
     for key, value in os.environ.items():
-        log.info(f"  {key}={value}")
+        if key.startswith('CRUX_'):
+            log.info(f"  {key}={value}")
+            found_crux_env = True
+    if not found_crux_env:
+        log.info("  (No CRUX_ prefixed environment variables found)")
 
 def test_command(args):
     log.info("Running Crux unit tests...")
     try:
-        # Ensure pytest and pytest-cov are installed
+        # Ensure pytest and pytest-cov are installed in the current environment
         subprocess.run([sys.executable, "-m", "pip", "install", "pytest", "pytest-cov"], check=True, capture_output=True)
         
         # Run pytest with coverage
@@ -78,7 +80,7 @@ def main():
     info_parser.set_defaults(func=info_command)
 
     # Env command
-    env_parser = subparsers.add_parser("env", help="Prints all loaded environment variables.")
+    env_parser = subparsers.add_parser("env", help="Prints all loaded environment variables starting with CRUX_.")
     env_parser.set_defaults(func=env_command)
 
     # Test command
